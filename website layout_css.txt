@@ -1,0 +1,99 @@
+website layout;
+sementic tags = keep your content organized
+better for SEO
+Assists screen readers and other tech for accessibility
+
+<header> = intro content
+<nav> = navigation bar, links
+<main> = main content(section, aside)
+<section> = dependent content
+<aside> = side content
+<article> = independent content
+<footer> = closing content
+
+@mediascreen is used for mobile version
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="style.css">
+
+<header>
+	<h2>Header</h2>
+</header>
+
+<nav class="navbar"></nav>
+
+<main>
+	<aside>
+		<h2>This is Aside</h2>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, tempora accusamus natus doloremque nam fugit corporis earum, iusto corrupti ullam nobis aspernatur reiciendis itaque placeat fugiat mollitia, nulla expedita veniam.</p>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, tempora accusamus natus doloremque nam fugit corporis earum, iusto corrupti ullam nobis aspernatur reiciendis itaque placeat fugiat mollitia, nulla expedita veniam.</p>
+	</aside>
+
+	<section>
+		<h2>This is Section</h2>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, tempora accusamus natus doloremque nam fugit corporis earum, iusto corrupti ullam nobis aspernatur reiciendis itaque placeat fugiat mollitia, nulla expedita veniam.</p>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, tempora accusamus natus doloremque nam fugit corporis earum, iusto corrupti ullam nobis aspernatur reiciendis itaque placeat fugiat mollitia, nulla expedita veniam.</p>
+	</section>
+
+	<article><h2>This is Article</h2>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, tempora accusamus natus doloremque nam fugit corporis earum, iusto corrupti ullam nobis aspernatur reiciendis itaque placeat fugiat mollitia, nulla expedita veniam.</p>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, tempora accusamus natus doloremque nam fugit corporis earum, iusto corrupti ullam nobis aspernatur reiciendis itaque placeat fugiat mollitia, nulla expedita veniam.</p>
+	</article>
+</main>
+
+<footer>
+	<h2>Footer</h2>
+</footer>
+
+</body>
+</html>
+
+
+style.css
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+header{
+    background-color: hsl(0, 0%, 84%);
+    text-align: center;
+    padding: 25px;
+}
+.navbar{
+    background-color: hsl(0, 0%, 12%);
+    height: 50px;
+}
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+footer{
+    display: block;
+    clear: both;
+    background-color: hsl(0, 0%, 84%);
+    text-align: center;
+    padding: 25px;
+}
+@media screen and (max-width:600px) {
+    aside, section, article{
+        width: 100%;
+    }
+}
